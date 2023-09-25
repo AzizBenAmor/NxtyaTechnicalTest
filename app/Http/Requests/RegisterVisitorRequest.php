@@ -24,7 +24,7 @@ class RegisterVisitorRequest extends FormRequest
         return [
            
             'name'=>'required|string|max:150',
-            'email'=>'required|email|unique:admins,email',
+            'email'=>'required|email|unique:visitors,email',
             'password'=>'required|string|min:8|max:25'
 
         ];
